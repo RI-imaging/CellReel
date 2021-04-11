@@ -8,8 +8,7 @@ on:
 jobs:
   deploy:
 
-    runs-on: macos-latest
-
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
@@ -23,7 +22,7 @@ jobs:
         pip install -e .
     - name: Build and publish
       env:
-        TWINE_USERNAME: ci_zmdd
+        TWINE_USERNAME: ci_qpi
         TWINE_PASSWORD: ${{ secrets.PYPI_PWD }}
       run: |
         python setup.py sdist bdist_wheel
