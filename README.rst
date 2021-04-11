@@ -31,7 +31,8 @@ Testing
 ::
 
     pip install -e .
-    python setup.py test
+    pip install pytest pytest-qt
+    pytest tests
 
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/cellreel.svg
