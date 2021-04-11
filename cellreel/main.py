@@ -5,7 +5,7 @@ import sys
 import traceback
 
 import qpimage
-from PyQt5 import uic, QtWidgets
+from PyQt5 import uic, QtCore, QtWidgets
 import pyqtgraph as pg
 
 from .wiz_init import InitWizard
@@ -38,6 +38,12 @@ class CellReelMain(QtWidgets.QMainWindow):
         self.actionOpen_Session.triggered.connect(self.on_session_open)
         self.tabWidget.setEnabled(False)
         self.has_data = False
+        # if "--version" was specified, print the version and exit
+        if "--version" in sys.argv:
+            print(__version__)
+            QtWidgets.QApplication.processEvents(QtCore.QEventLoop.AllEvents,
+                                                 300)
+            sys.exit(0)
 
     def closeEvent(self, event):
         # remove reference to allow garbage collection
