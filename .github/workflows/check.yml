@@ -47,8 +47,10 @@ jobs:
         # show installed packages
         pip freeze
     - name: Start application and print version
+      env:
+         QT_DEBUG_PLUGINS: 1
       run: |
-        QT_DEBUG_PLUGINS=1 python -m cellreel --version
+         python -m cellreel --version
     - name: Test with pytest
       run: |
          coverage run --source=cellreel -m pytest tests
