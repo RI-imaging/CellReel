@@ -191,7 +191,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'CellReel', 'CellReel Documentation',
-     author, 'CellReel', 'GUI for fluorescence and refractive index tomography.',
+     author, 'CellReel',
+     'GUI for fluorescence and refractive index tomography.',
      'Miscellaneous'),
 ]
 
@@ -210,4 +211,3 @@ intersphinx_mapping = {
     "qpformat": ('http://qpformat.readthedocs.io/en/'+rtd_link, None),
     "cellsino": ('http://cellsino.readthedocs.io/en/'+rtd_link, None),
 }
-
