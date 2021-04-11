@@ -1,0 +1,6 @@
+include CHANGELOG
+include LICENSE
+include README.rst
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include cellreel *.png *.ui

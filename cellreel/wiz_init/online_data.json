@@ -1,0 +1,129 @@
+{
+  "phantom": {
+    "descr": "Cell-sized object consisting of a Polyacrylamide (PAA) bead containing fused silica beads; No fluorescence data",
+    "refs": [
+      "https://doi.org/10.6084/m9.figshare.8055407.v1",
+      "https://doi.org/10.1002/jbio.201700145"
+      ],
+    "data": [
+      {"name": "phantom_sinogram_qpi.h5",
+       "sha256": "aff6aa82367697c75b706bd8b99ede8ff225610293bb1e1f9ef6c8dcd67cbbdf",
+       "urls": ["https://ndownloader.figshare.com/files/15013052"],
+       "descr": "quantitative amplitude/phase sinogram",
+       "dest": "sinogram qpi",
+       "size": 220001385
+       }
+      ]
+    },
+  "hl60": {
+    "descr": "HL60 cell; Fluorescence data shows Hoechst staining",
+    "refs": [
+      "https://doi.org/10.6084/m9.figshare.8055407.v1",
+      "https://doi.org/10.1002/jbio.201700145"
+      ],
+    "data": [
+      {"name": "hl60_reference_fli.h5",
+       "sha256": "032c3c989050a225b296c22da9ac0c5b21ecfd196eb6e9681fce366c360fbc01",
+       "urls": ["https://ndownloader.figshare.com/files/15013100"],
+       "descr": "fluorescence colocalization reference data",
+       "dest": "reference fli",
+       "size": 1497529
+       },
+      {"name": "hl60_reference_qpi.h5",
+       "sha256": "7b1f46fab6245093429f90560b09d0e6aa96b6b616d27bb4401d2421ed0bde1b",
+       "urls": ["https://ndownloader.figshare.com/files/15013103"],
+       "descr": "quantitative amplitude/phase colocalization reference data",
+       "dest": "reference qpi",
+       "size": 735310
+       },
+      {"name": "hl60_sinogram_fli.h5",
+       "sha256": "2fa3647f536fba16a985ac155670679bcd19d868a9aa15f03331275ba0bdc686",
+       "urls": ["https://ndownloader.figshare.com/files/15013526"],
+       "descr": "fluorescence sinogram",
+       "dest": "sinogram fli",
+       "size": 817481022
+       },
+      {"name": "hl60_sinogram_qpi.h5",
+       "sha256": "4f2d797d1781a835f3c4b421a95adb5c5226169a94ea3c175ffebf55b58ad4f7",
+       "urls": ["https://ndownloader.figshare.com/files/15013106"],
+       "descr": "quantitative amplitude/phase sinogram",
+       "dest": "sinogram qpi",
+       "size": 465927549
+       }
+      ]
+    },
+  "retina-young": {
+    "descr": "Young (P10) mouse retina cell; Fluorescence data shows Hoechst staining",
+    "refs": [
+      "https://doi.org/10.6084/m9.figshare.8055407.v1",
+      "https://doi.org/10.1002/jbio.201700145"
+      ],
+    "data": [
+      {"name": "retina-young_reference_fli.h5",
+       "sha256": "032fc6de9cb9e6889a59cc49f596d3953d0dfa5c59aa65340e571a2fdf6e7692",
+       "urls": ["https://ndownloader.figshare.com/files/15013529"],
+       "descr": "fluorescence colocalization reference data",
+       "dest": "reference fli",
+       "size": 1429395
+       },
+      {"name": "retina-young_reference_qpi.h5",
+       "sha256": "53df795724ec7e7d8bbcd9aefe9d24867d3d60b45d6120191079c6a1907c8f6b",
+       "urls": ["https://ndownloader.figshare.com/files/15013532"],
+       "descr": "quantitative amplitude/phase colocalization reference data",
+       "dest": "reference qpi",
+       "size": 767625
+       },
+      {"name": "retina-young_sinogram_fli.h5",
+       "sha256": "fb84a8a579505ae3f314a3c1847fb5cc474a3c2ce6327ae46a709c4c782a5a10",
+       "urls": ["https://ndownloader.figshare.com/files/15015491"],
+       "descr": "fluorescence sinogram",
+       "dest": "sinogram fli",
+       "size": 1123531328
+       },
+      {"name": "retina-young_sinogram_qpi.h5",
+       "sha256": "62ec6f2fc373449050d798bb00922fa3e5e4ad803f05a093c76007eb3d27994a",
+       "urls": ["https://ndownloader.figshare.com/files/15013535"],
+       "descr": "quantitative amplitude/phase sinogram",
+       "dest": "sinogram qpi",
+       "size": 242638931
+       }
+      ]
+    },
+  "retina-adult": {
+    "descr": "Adult mouse retina cell; Fluorescence data shows Hoechst staining",
+    "refs": [
+      "https://doi.org/10.6084/m9.figshare.8055407.v1",
+      "https://doi.org/10.1002/jbio.201700145"
+      ],
+    "data": [
+      {"name": "retina-adult_reference_fli.h5",
+       "sha256": "41495a7acdc6974711dd0c01d7331856b8ec38733178df41addd676e0ba45011",
+       "urls": ["https://ndownloader.figshare.com/files/15013736"],
+       "descr": "fluorescence colocalization reference data",
+       "dest": "reference fli",
+       "size": 1336316
+       },
+      {"name": "retina-adult_reference_qpi.h5",
+       "sha256": "c7efa7530be273b09e0f57632554c7f03c1980bb8af78da2f123a500e5ea4d8a",
+       "urls": ["https://ndownloader.figshare.com/files/15013739"],
+       "descr": "quantitative amplitude/phase colocalization reference data",
+       "dest": "reference qpi",
+       "size": 682724
+       },
+      {"name": "retina-adult_sinogram_fli.h5",
+       "sha256": "93f6b2c36be2f03bbf0b5a6a01fff42028a69107fe9bbbc594b4c140b1aefd3c",
+       "urls": ["https://ndownloader.figshare.com/files/15015779"],
+       "descr": "fluorescence sinogram",
+       "dest": "sinogram fli",
+       "size": 1090153005
+       },
+      {"name": "retina-adult_sinogram_qpi.h5",
+       "sha256": "4761be77def8c03aa91cdb19f5f7dc5aecc3f234dd0d5f777cb14bda32c4d557",
+       "urls": ["https://ndownloader.figshare.com/files/15013742"],
+       "descr": "quantitative amplitude/phase sinogram",
+       "dest": "sinogram qpi",
+       "size": 239877966
+       }
+      ]
+    }
+}

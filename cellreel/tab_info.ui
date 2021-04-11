@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_general">
+     <property name="title">
+      <string>General</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_general"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_qp">
+     <property name="title">
+      <string>Quantitative Phase</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_qp"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_fl">
+     <property name="title">
+      <string>Fluorescence</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_fl"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
