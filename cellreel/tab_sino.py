@@ -392,7 +392,7 @@ class SinoWidget(QtWidgets.QWidget):
         if mode == "phase":
             cmap = "coolwarm"
         elif mode == "amplitude":
-            cmap = "gray"
+            cmap = "grey"
         else:
             cmap = "YlGnBu_r"
 

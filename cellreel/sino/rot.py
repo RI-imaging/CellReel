@@ -151,18 +151,6 @@ def fit_skewed_periodic(x, y, period, num_skw=2, y0=None):
 
     out = lmfit.minimize(skewed_periodic_residual, params, args=(x, y))
 
-    if False:
-        import matplotlib.pylab as plt
-        x2 = np.linspace(0, period, 100, endpoint=True)
-        y2 = skewed_periodic_model(out.params, x2)
-        for key in out.params.keys():
-            print(key, out.params[key].value)
-        plt.plot(x, y, "o", label="data")
-        plt.plot(x2, y2, "x-", label="fit")
-        plt.legend()
-        plt.grid()
-        plt.show()
-
     def func(x): return skewed_periodic_model(out.params, x)
 
     return func, out.params.valuesdict()

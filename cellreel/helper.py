@@ -1,11 +1,70 @@
-import matplotlib.cm as cm
-import numpy as np
+from collections import OrderedDict
 import pyqtgraph as pg
+from pyqtgraph.graphicsItems.GradientEditorItem import Gradients
+
+
+Gradients_custom = OrderedDict([
+    ('YlGnBu_r', {
+        'ticks': [
+            (0.00000000, (8, 29, 88)),
+            (0.12500000, (37, 52, 148)),
+            (0.25000000, (34, 94, 168)),
+            (0.37500000, (29, 145, 192)),
+            (0.50000000, (65, 182, 196)),
+            (0.62500000, (127, 205, 187)),
+            (0.75000000, (199, 233, 180)),
+            (0.87500000, (237, 248, 177)),
+            (1.00000000, (255, 255, 217)),
+        ],
+        'mode': 'rgb'}),
+    ('coolwarm', {
+        'ticks': [
+            (0.00000000, (58, 76, 192)),
+            (0.03125000, (67, 90, 204)),
+            (0.06250000, (77, 103, 215)),
+            (0.09375000, (87, 116, 225)),
+            (0.12500000, (97, 129, 233)),
+            (0.15625000, (108, 142, 241)),
+            (0.18750000, (119, 154, 246)),
+            (0.21875000, (129, 165, 251)),
+            (0.25000000, (141, 175, 253)),
+            (0.28125000, (152, 185, 254)),
+            (0.31250000, (162, 193, 254)),
+            (0.34375000, (173, 201, 252)),
+            (0.37500000, (184, 207, 249)),
+            (0.40625000, (194, 212, 244)),
+            (0.43750000, (203, 216, 237)),
+            (0.46875000, (212, 219, 229)),
+            (0.50000000, (220, 220, 220)),
+            (0.53125000, (228, 216, 209)),
+            (0.56250000, (235, 210, 197)),
+            (0.59375000, (240, 204, 185)),
+            (0.62500000, (244, 196, 172)),
+            (0.65625000, (246, 187, 160)),
+            (0.68750000, (247, 177, 147)),
+            (0.71875000, (246, 165, 135)),
+            (0.75000000, (244, 153, 122)),
+            (0.78125000, (240, 140, 110)),
+            (0.81250000, (235, 126, 98)),
+            (0.84375000, (229, 112, 87)),
+            (0.87500000, (221, 96, 76)),
+            (0.90625000, (212, 79, 66)),
+            (0.93750000, (202, 61, 56)),
+            (0.96875000, (191, 40, 46)),
+            (1.00000000, (179, 3, 38)),
+        ],
+        'mode': 'rgb'}),
+    ])
 
 
 def get_cmap(name):
-    """Get matplotlib colormap as PyQtGraph ColorMap"""
-    m = cm.get_cmap(name)
-    points = np.linspace(0, 1, 100, endpoint=True)
-    color = np.array([m(p) for p in points])*255
-    return pg.ColorMap(pos=points, color=color)
+    """Return pg.Colormap
+
+    The maps "YlGnBu_r" and "coolwarm" were translated from matplotlib.
+    """
+    if name in Gradients:
+        return pg.ColorMap(*zip(*Gradients[name]["ticks"]))
+    elif name in Gradients_custom:
+        return pg.ColorMap(*zip(*Gradients_custom[name]["ticks"]))
+    else:
+        raise KeyError(f"Colormap '{name}' not implemented!")

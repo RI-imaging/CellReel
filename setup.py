@@ -30,7 +30,6 @@ setup(
         "flimage",  # FL data management
         "h5py>=2.7",  # data storage
         "imageio[ffmpeg]>=2.5"  # avi import (fl)/export
-        "matplotlib>=3.0",  # color maps
         "numpy",
         "odtbrain>=0.4.0",  # ODT reconstruction
         "pyqt5",

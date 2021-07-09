@@ -29,7 +29,7 @@ class RecoWidget(QtWidgets.QWidget):
             vim.keyPressEvent = lambda _: None
             vim.keyReleaseEvent = lambda _: None
 
-        self.imageView_ri.setColorMap(helper.get_cmap(name="gnuplot2"))
+        self.imageView_ri.setColorMap(helper.get_cmap(name="magma"))
         self.imageView_fl.setColorMap(helper.get_cmap(name="YlGnBu_r"))
 
         # add crosshair

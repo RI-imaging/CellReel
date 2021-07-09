@@ -345,7 +345,7 @@ class InitPageOwnDataColoc(InitPage):
             imv.ui.histogram.hide()
 
         self.ImageView_pha.setColorMap(helper.get_cmap(name="coolwarm"))
-        self.ImageView_amp.setColorMap(helper.get_cmap(name="gray"))
+        self.ImageView_amp.setColorMap(helper.get_cmap(name="grey"))
         self.ImageView_florig.setColorMap(helper.get_cmap(name="YlGnBu_r"))
         self.ImageView_fl.setColorMap(helper.get_cmap(name="YlGnBu_r"))
 

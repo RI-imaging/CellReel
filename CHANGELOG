@@ -1,2 +1,4 @@
+0.1.1
+ - ref: implement coolwarm and YlGnBu_r colormaps (drop matplotlib)
 0.1.0
  - initial release
