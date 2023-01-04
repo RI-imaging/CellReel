@@ -37,7 +37,7 @@ Testing
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/cellreel.svg
    :target: https://pypi.python.org/pypi/cellreel
-.. |Tests Status| image:: https://img.shields.io/github/workflow/status/RI-Imaging/cellreel/Checks
+.. |Tests Status| image:: https://img.shields.io/github/actions/workflow/status/RI-Imaging/cellreel/check.yml
    :target: https://github.com/RI-Imaging/cellreel/actions?query=workflow%3AChecks
 .. |Coverage Status| image:: https://img.shields.io/codecov/c/github/RI-imaging/cellreel/master.svg
    :target: https://codecov.io/gh/RI-imaging/cellreel
