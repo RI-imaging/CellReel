@@ -43,7 +43,7 @@ jobs:
         python -m pip install --upgrade pip wheel
         # https://github.com/pyFFTW/pyFFTW/issues/252
         pip install numpy cython
-        python -m pip install codecov coverage flake8 pytest pytest-qt
+        python -m pip install coverage flake8 pytest pytest-qt
         # install dependencies
         pip install -e .
         # show installed packages
@@ -59,10 +59,8 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 .
-    - name: Submit code coverage
-      run: |
-        coverage report -m
-        codecov
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
 #    - name: Create app and check if it runs (macOS)
 #      if: runner.os == 'macOS'
 #      working-directory: ./build-recipes
